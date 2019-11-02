@@ -1,0 +1,16 @@
+<form #f="ngForm" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label for="smileNumber" class="col-form-label">Smile number</label>
+      <div class="col-xs-10">
+        <input type="text"  class="form-control" id="smileNumber" name="surname" [(ngModel)]="recharge.smileNumber" placeholder="Phone Number">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="amount" class="col-form-label">Amount</label>
+      <div class="col-xs-10">
+        <input type="text" class="form-control" id="firstname" name="amount" [(ngModel)]="recharge.amount" placeholder="amount">
+      </div>
+    </div>
+    
+                          <button>Save</button>
+  </form>

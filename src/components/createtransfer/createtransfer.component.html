@@ -1,0 +1,28 @@
+<form #f="ngForm" (ngSubmit)="submit()">
+  <div class="form-group row">
+    <label for="accountName" class="col-xs-2 col-form-label">Account Name</label>
+    <div class="col-xs-10">
+      <input type="text"  class="form-control" id="accountName" name="accountName" [(ngModel)]="transfer.accountName" placeholder="Account Name">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="accountNumber" class="col-xs-2 col-form-label">Acccount Number</label>
+    <div class="col-xs-10">
+      <input type="text" class="form-control" id="accountNumber" name="accountNumber" [(ngModel)]="transfer.accountNumber" placeholder="Account Number">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="bank" class="col-xs-2 col-form-label">Bank Name</label>
+    <div class="col-xs-10">
+      <input type="text"  class="form-control" id="bank" name="bank" [(ngModel)]="transfer.bank" placeholder="Bank Name">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="amount" class="col-xs-2 col-form-label">Amount</label>
+    <div class="col-xs-10">
+      <input type="text" class="form-control" id="amount" name="amount" [(ngModel)]="transfer.amount" placeholder="Amount">
+    </div>
+  </div>
+  
+                        <button>Save</button>
+</form>
