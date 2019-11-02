@@ -52,7 +52,7 @@ import { AuthGuard } from 'src/services/auth-gaurd.service';
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot() ,// ToastrModule added
     RouterModule.forRoot([
-      { path: '', component: AppComponent, pathMatch: 'full' },
+      { path: '', component: ListrechargeComponent, pathMatch: 'full' },
      { path: 'recharge/new', component: RechargeComponent , canActivate: [AuthGuard] },
      { path: 'rechargelist', component: ListrechargeComponent, canActivate: [AuthGuard] },
      { path: 'send', component: ListtransferComponent, canActivate: [AuthGuard] },
