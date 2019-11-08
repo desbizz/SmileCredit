@@ -16,7 +16,7 @@ router.post('/api/recharge',auth,async (req, res)=>{
     }
 })
 
-router.get('/api/completed/:id',auth,async (req, res)=>{
+router.get('/api/completed/:id',async (req, res)=>{
     const _id = req.params.id
     try{
         req.body={status:"DONE"}
