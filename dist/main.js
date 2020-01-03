@@ -62,7 +62,7 @@ module.exports = "<header>\n  <nav class='navbar navbar-expand-sm navbar-togglea
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"col-xs-12\">\r\n       <app-recharge></app-recharge>\r\n\r\n       <hr>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n   <app-completed></app-completed>\r\n  <hr/>\r\n     <app-not-completed></app-not-completed>\r\n</div>\r\n\r\n"
+module.exports = "<div class=\"row\">\r\n    <div class=\"col-xs-12\">\r\n       <app-recharge></app-recharge>\r\n\r\n       <hr>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n   <app-not-completed></app-not-completed>\r\n  <hr/>\r\n     \r\n     <app-completed></app-completed>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -274,7 +274,7 @@ var AppModule = /** @class */ (function () {
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_15__["BrowserAnimationsModule"],
                 ngx_toastr__WEBPACK_IMPORTED_MODULE_16__["ToastrModule"].forRoot(),
                 _angular_router__WEBPACK_IMPORTED_MODULE_11__["RouterModule"].forRoot([
-                    { path: '', component: _app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"], pathMatch: 'full' },
+                    { path: '', component: src_components_listrecharge_listrecharge_component__WEBPACK_IMPORTED_MODULE_14__["ListrechargeComponent"], pathMatch: 'full' },
                     { path: 'recharge/new', component: src_components_recharge_recharge_component__WEBPACK_IMPORTED_MODULE_13__["RechargeComponent"], canActivate: [src_services_auth_gaurd_service__WEBPACK_IMPORTED_MODULE_20__["AuthGuard"]] },
                     { path: 'rechargelist', component: src_components_listrecharge_listrecharge_component__WEBPACK_IMPORTED_MODULE_14__["ListrechargeComponent"], canActivate: [src_services_auth_gaurd_service__WEBPACK_IMPORTED_MODULE_20__["AuthGuard"]] },
                     { path: 'send', component: _components_listtransfer_listtransfer_component__WEBPACK_IMPORTED_MODULE_5__["ListtransferComponent"], canActivate: [src_services_auth_gaurd_service__WEBPACK_IMPORTED_MODULE_20__["AuthGuard"]] },
